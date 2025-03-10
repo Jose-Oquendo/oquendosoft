@@ -7,9 +7,6 @@ import './assets/css/index.css';
 import './assets/css/back.css';
 
 createRoot(document.getElementById('root')).render(
-  // <StrictMode>
-    // {/* <RouterProvider router={router} /> */}
     <Router/>
-  // </StrictMode>,
 )
 

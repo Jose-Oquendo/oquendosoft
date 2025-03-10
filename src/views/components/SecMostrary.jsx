@@ -25,84 +25,93 @@ function SecMostrary(){
 
     return (
         <>
-            <div className="card select-back" onClick={backTo}>
-                {firstPanel === 1 &&
-                    <div>
-                        <img src={photo1} className="card-img-top" alt="..."></img>
-                        <div className="card-body">
-                        <p className="card-text">1. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div> 
-                    </div>
-                }
-                {firstPanel === 2 &&
-                    <div>
-                        <img src={photo2} className="card-img-top" alt="..."></img>
-                        <div className="card-body">
-                        <p className="card-text">2. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div> 
-                    </div>
-                }
-                {firstPanel === 3 && 
-                    <div>
-                        <img src={photo3} className="card-img-top" alt="..."></img>
-                        <div className="card-body">
-                        <p className="card-text">3. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div> 
-                    </div>
-                }
+            <div className="h-title p-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div className="d-flex gap-3">
+                    <button className="btn btn-primary rounded-pill">Portafolio</button>
+                    <button className="btn btn-primary rounded-pill">Contáctame</button>
+                </div>
             </div>
-            <div className="card shadow">
-                {secondPanel === 1 &&
-                    <div>
-                        <img src={photo1} className="card-img-top" alt="..."></img>
-                        <div className="card-body">
-                        <p className="card-text">1. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div> 
-                    </div>
-                }
-                {secondPanel === 2 &&
-                    <div>
-                        <img src={photo2} className="card-img-top" alt="..."></img>
-                        <div className="card-body">
-                        <p className="card-text">2. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div> 
-                    </div>
-                }
-                {secondPanel === 3 && 
-                    <div>
-                        <img src={photo3} className="card-img-top" alt="..."></img>
-                        <div className="card-body">
-                        <p className="card-text">3. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div> 
-                    </div>
-                }
-            </div>
-            <div className="card select-to" onClick={moveTo}>
-                {thirdPanel === 1 &&
-                    <div>
-                        <img src={photo1} className="card-img-top" alt="..."></img>
-                        <div className="card-body">
-                        <p className="card-text">1. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div> 
-                    </div>
-                }
-                {thirdPanel === 2 &&
-                    <div>
-                        <img src={photo2} className="card-img-top" alt="..."></img>
-                        <div className="card-body">
-                        <p className="card-text">2. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div> 
-                    </div>
-                }
-                {thirdPanel === 3 && 
-                    <div>
-                        <img src={photo3} className="card-img-top" alt="..."></img>
-                        <div className="card-body">
-                        <p className="card-text">3. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div> 
-                    </div>
-                }
-            </div>
+            <div className='mostrary'>
+                <div className="card select-back" onClick={backTo}>
+                    {firstPanel === 1 &&
+                        <div>
+                            <img src={photo1} className="card-img-top" alt="..."></img>
+                            <div className="card-body">
+                            <p className="card-text text-center">El enfoque de un objetivo debe ser dirijido a la mejora continua de procesos.</p>
+                            </div> 
+                        </div>
+                    }
+                    {firstPanel === 2 &&
+                         <div>
+                            <img src={photo2} className="card-img-top" alt="..."></img>
+                            <div className="card-body">
+                            <p className="card-text text-center">Pasion y busqueda de aprendizaje son necesarias para ser el mejor.</p>
+                            </div> 
+                        </div>
+                    }
+                    {firstPanel === 3 && 
+                        <div>
+                            <img src={photo3} className="card-img-top" alt="..."></img>
+                            <div className="card-body">
+                            <p className="card-text text-center">El desarrollo de actividades que nos divierta es la clave para una vida plena.</p>
+                            </div> 
+                        </div>
+                    }
+                </div>
+                <div className="card shadow">
+                    {secondPanel === 1 &&
+                        <div>
+                            <img src={photo1} className="card-img-top" alt="..."></img>
+                            <div className="card-body">
+                            <p className="card-text text-center">El enfoque de un objetivo debe ser dirijido a la mejora continua de procesos.</p>
+                            </div> 
+                        </div>
+                    }
+                    {secondPanel === 2 &&
+                         <div>
+                            <img src={photo2} className="card-img-top" alt="..."></img>
+                            <div className="card-body">
+                            <p className="card-text text-center">Pasion y busqueda de aprendizaje son necesarias para ser el mejor.</p>
+                            </div> 
+                        </div>
+                    }
+                    {secondPanel === 3 && 
+                        <div>
+                            <img src={photo3} className="card-img-top" alt="..."></img>
+                            <div className="card-body">
+                            <p className="card-text text-center">El desarrollo de actividades que nos divierta es la clave para una vida plena.</p>
+                            </div> 
+                        </div>
+                    }
+                </div>
+                <div className="card select-to" onClick={moveTo}>
+                    {thirdPanel === 1 &&
+                        <div>
+                            <img src={photo1} className="card-img-top" alt="..."></img>
+                            <div className="card-body">
+                            <p className="card-text text-center">El enfoque de un objetivo debe ser dirijido a la mejora continua de procesos.</p>
+                            </div> 
+                        </div>
+                    }
+                    {thirdPanel === 2 &&
+                         <div>
+                            <img src={photo2} className="card-img-top" alt="..."></img>
+                            <div className="card-body">
+                            <p className="card-text text-center">Pasion y busqueda de aprendizaje son necesarias para ser el mejor.</p>
+                            </div> 
+                        </div>
+                    }
+                    {thirdPanel === 3 && 
+                        <div>
+                            <img src={photo3} className="card-img-top" alt="..."></img>
+                            <div className="card-body">
+                            <p className="card-text text-center">El desarrollo de actividades que nos divierta es la clave para una vida plena.</p>
+                            </div> 
+                        </div>
+                    }
+                </div>
+            </div> 
         </>
     )
 }

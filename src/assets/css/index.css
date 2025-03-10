@@ -2,10 +2,10 @@
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
 :root {
-  --text-xl: 20px;
-  --text-lg: 16px;
-  --text-md: 12px;
-  --text-sm: 10px;
+  --text-xl: 24px;
+  --text-lg: 20px;
+  --text-md: 16px;
+  --text-sm: 14px;
   --color-white: #f8f7f7;
   --color-light-white: #eeecec;
   --color-beinge: #f0e7db;
@@ -20,7 +20,12 @@
 
 body {
   /* background-color: var(--color-beinge); */
-  background-color: var(--color-negro-mate);
+  /* background-color: var(--color-negro-mate); */
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), 
+              url('../img/cosmis.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
   font-synthesis: none;
