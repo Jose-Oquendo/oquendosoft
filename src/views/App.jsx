@@ -17,7 +17,7 @@ function App() {
         <Flies></Flies>
       </main>
       <main className="mycontainer">
-        <section>
+        <section className="mycontent">
           <HeaderPage></HeaderPage>
           {page == 'home' && <div><SecMostrary></SecMostrary></div> }
           {page == 'about' && 

@@ -11,6 +11,14 @@
   z-index: 5;
   gap: 2em;
 }
+.mycontent{
+  overflow-y: scroll;
+  overflow-x: visible;
+  height: 95vh;
+}
+*::-webkit-scrollbar{
+  display: none;
+}
 .h-title{
   display: flex;
   flex-direction: column ;
@@ -52,47 +60,89 @@
   width: 100%;
   border-left: 2px solid #ffffff54;
 }
-.options-select .nav.list{
+.options-select .list{
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
+  width: 100%;
   gap: 3px;
 }
-.options-select .nav.list .nav-item{
+.options-select .container-fluid{
+  overflow: hidden;
+  align-items: flex-start !important;
+}
+.options-select .navbar-toggler{
+  background-color: rgba(105, 105, 105, 0.51) !important;
+  top: 0;
+}
+.options-select .navbar-toggler .navbar-toggler-icon{
+  color: white !important;
+  filter: invert(1);
+}
+.options-select .navbar-collapse{
+  transition: all 0.5s ease-in-out
+}
+.options-select .list .nav-item{
   background-color: rgba(105, 105, 105, 0.51);
+  min-width: 140px;
   width: 100%;
   border-radius: 1em;
+  gap: 5px;
   padding: 1em;
   text-align: center;
   border-left: 1px solid rgb(151 151 151 / 72%);
   transition: all 0.2s ease-in;
+  text-wrap: nowrap;
 }
-.options-select .nav.list .nav-item:hover{
+.options-select .list .nav-item:hover{
   background-color: rgba(0, 0, 0, 0.854);
   border: 1px solid rgba(151, 151, 151, 0.952);
   transition: all 0.2s ease-in;
 }
 
 @media (max-width: 780px) {
-  .container{
+  .mycontainer{
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
     align-items: inherit;
+    padding: 0px;
+  }
+  .mycontent{
+    padding: 0em 3em 3em 3em;
   }
   .options-select{
     display: flex;
     justify-content: space-between;
     border-left: none;
-    padding: 10px;
+    border-bottom: 1px solid rgb(151 151 151 / 72%);
+    width: 100%;
+    max-height: 6em;
+    padding: 20px;
+    overflow: hidden;
   }
-  .options-select .nav.list{
+  .options-select .list{
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    width: 100%;
     gap: 5px;
   }
-  .options-select .nav.list .nav-item{
-    min-width: 7em;
-    width: auto;
+  .options-select .list .nav-item{
+    width: 140px;
+  }
+  .options-select .container-fluid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    overflow-x: scroll;
+  }
+  .options-select .container-fluid .navbar-collapse .list{
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between;
+    padding-left: 1em !important;
+    width: 100%;
+    margin-left: 3em;
   }
 }
 
