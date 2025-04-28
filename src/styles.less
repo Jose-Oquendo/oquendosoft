@@ -1,1 +1,117 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("assets/css/back.less");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('assets/img/cosmis.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: auto !important; 
+    color: white !important;
+    padding-right: 0px !important;
+    .main{
+        width: 100%;
+    }
+}
+
+.navbar{
+    backdrop-filter: blur(10px);
+    position: relative;
+    .offcanvas{
+        height: 100vh;
+    }
+    a{
+        mix-blend-mode: difference;
+        color: #0c738c;
+    }
+}
+.container{
+    align-items: center;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h-title{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px 5px 10px;
+    .welcome {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      .line {
+        width: 50px;
+        height: 2px;
+        background-color: rgb(108 117 125);
+      }
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      color: rgb(105, 114, 122);
+    }
+    img {
+        width: -webkit-fill-available;
+        min-width: 300px;
+        max-width: 500px;
+    }
+}
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div{
+        padding: 10px;
+    }
+    .profile {
+        text-align: left;
+        max-width: 400px;
+        h3 {
+            margin: 10px 0;
+        }
+        p {
+            font-size: 1em;
+        }
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            color: lightblue;
+            border: 1px solid lightblue;
+            border-radius: 20px;
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+    }
+    .profile-photo {
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 6px solid #1a5e9d;
+        }
+        img::defore {
+            content: "";
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            right: 0px;
+        }
+    }
+    .info-section{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
